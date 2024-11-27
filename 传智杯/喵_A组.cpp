@@ -13,22 +13,13 @@ signed main(){
     cin.tie(0);cout.tie(0);
     cout << fixed << setprecision(6);
 
-    string s1, s2;
-    getline(cin, s1);
-    getline(cin, s2);
-
-    string s3 = "";
-    for (int i = 0; i < s1.size();i++){
-        bool f = 1;
-        for (int j = 0; j < s2.size();j++){
-            if(s1[i]==s2[j]){
-                f = 0;
-            }
-        }
-        if(f){
-            s3 = s3 + s1[i];
-        }
+    string s;
+    getline(cin, s);
+    for (int i = 0; i < s.size()-3; i++)
+    {
+        cout << s[i];
     }
-    cout << s3 << endl;
+    
+
     return 0;
 }
